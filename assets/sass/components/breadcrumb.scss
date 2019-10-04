@@ -1,0 +1,23 @@
+.nav-breadcrumb {
+    margin-bottom: 30px;
+    .breadcrumb {
+        padding: 0;
+        background-color: transparent;
+        &-item {
+            a {
+                font-weight: 600;
+                color: $COLOR-BLACK;
+            }
+            svg {
+                font-size: 0.9375rem;
+                margin-right: 15px;
+                margin-left: 15px;
+                color: $COLOR-BLACK;
+            }
+        }
+    }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: none;
+}

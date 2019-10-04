@@ -1,0 +1,203 @@
+.header {
+    &-topbar {
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        &.sticky {
+            position: fixed;
+            width: 100%;
+            left: 0;
+            top: -100px;
+            -webkit-transform: translateY(100px);
+            -ms-transform: translateY(100px);
+            transform: translateY(100px);
+            z-index: 1030;
+            border-top: 0;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+        }
+    }
+    &-brand {
+        background-color: #f8f9fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        &__logo {
+            font-family: $ROBOTO;
+            font-weight: 500;
+            font-size: 1.25rem;
+            color: $COLOR-BLACK;
+            @include MQ(md) {
+                font-size: 1.5625rem;
+            }
+            b {
+                font-weight: 700;
+            }
+            .text-blue {
+                font-size: 1.625rem;
+                font-family: $ROBOTO;
+            }
+        }
+    }
+    .navbar-fc {
+        .navbar-brand {
+            font-family: $ROBOTO;
+            font-weight: 500;
+            font-size: 1.25rem;
+            color: $COLOR-BLACK;
+            @include MQ(md) {
+                font-size: 1.5625rem;
+            }
+            b {
+                font-weight: 700;
+            }
+            .text-blue {
+                font-size: 1.625rem;
+                font-family: $ROBOTO;
+            }
+        }
+        .navbar-nav {
+            text-align: center;
+            .nav-link {
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 0.875rem;
+            }
+            .dropdown-menu {
+                border-radius: 0;
+                text-align: center;
+                @include MQ(xl) {
+                    text-align: left;
+                }
+                .dropdown-item {
+                    color: rgba(0,0,0,.9);
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    }
+    .nav-search {
+        width: 100%;
+        @include MQ(lg) {
+            width: 50px;
+        }
+        a {
+            color: $COLOR-BLACK;
+            margin: auto;
+            @include MQ(md) {
+                margin: 0;
+            }
+            svg {
+                font-size: 14px;
+            }
+        }
+    }
+    .search-area {
+        width: 100vw;
+        height: 100vh;
+        background: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        & .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            cursor: pointer;
+            color: #555;
+        }
+        & .search-area-form {
+            width: 100%;
+            max-width: 700px;
+            margin: 20px;
+            & .search-area-input {
+                width: 100%;
+                padding: 1rem 0;
+                outline: none;
+                font-size: 1.2em;
+                font-weight: 300;
+                background: none;
+                border: none;
+                border-bottom: 1px solid #aaa;
+            }
+            & .search-area-button {
+                position: absolute;
+                right: 0;
+                bottom: 15px;
+                background: none;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.home {
+    .header {
+        .hero {
+            .autor {
+                margin-top: 80px;
+                margin-bottom: 80px;
+                &-avatar {
+                    text-align: center;
+                    img {
+                        width: 80%;
+                    }
+                }
+                &-content {
+                    &__nombre {
+                        font-size: 1.5rem;
+                        text-transform: uppercase;
+                        text-align: center;
+                        @include MQ(md) {
+                            text-align: left;
+                        }
+                    }
+                    &__text {
+                        text-align: center;
+                        margin-bottom: 35px;
+                        @include MQ(md) {
+                            text-align: left;
+                        }
+                    }
+                    &__social {
+                        ul {
+                            text-align: center;
+                            @include MQ(md) {
+                                text-align: left;
+                            }
+                            li {
+                                margin-right: 20px;
+                                a {
+                                    color: $COLOR-BLACK;
+                                    &:focus, &:active, &:hover {
+                                        color: $COLOR-BLUE;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .intro {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            background-color: $COLOR-GREY;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.sidebar {
+    .widget-about {
+        text-align: center;
+        &__content {
+            &__avatar {
+                text-align: center;
+                img {
+                    width: 40%;
+                }
+                margin-bottom: 35px;
+            }
+            &__nombre {
+                font-size: 1.25rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .widget-social {
+        text-align: center;
+        ul {
+            li {
+                margin-left: 10px;
+                margin-right: 10px;
+                a {
+                    color: $COLOR-BLACK;
+                    &:focus, &:active, &:hover {
+                        color: $COLOR-BLUE;
+                    }
+                }
+            }
+        }
+    }
+    .widget-post {
+        &__content {
+            .ultimos-posts {
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+                list-style: none;
+                li {
+                    margin-bottom: 20px;
+                    text-align: left;
+                    display: table;
+                }
+                &__thumb {
+                    float: left;
+                    width: 85px;
+                    margin-right: 15px;
+                    margin-bottom: 0;
+                }
+                &__meta {
+                    display: inline-block;
+                    text-align: left;
+                    width: calc(100% - 100px);
+                    float: right;
+                    &__titulo {
+                        font-weight: 500;
+                        font-size: 0.875rem;
+                        margin-bottom: 5px;
+                        color: $COLOR-BLACK;
+                    }
+                    &__date {
+                        color: $COLOR-DATE;
+                        font-size: 0.8125rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,8 +1,16 @@
-@import 'utils/media.scss';
-@import 'utils/colores.scss';
+@import 'utils/_media';
+@import 'utils/_variables';
+
 @import 'base/base.scss';
+
 @import 'components/buttons.scss';
-@import 'layout/nav.scss';
-@import 'layout/header.scss';
-@import 'layout/content.scss';
-@import 'layout/footer.scss';
+@import 'components/carousel.scss';
+@import 'components/breadcrumb.scss';
+
+@import 'layouts/header.scss';
+@import 'layouts/content.scss';
+@import 'layouts/widget.scss';
+@import 'layouts/footer.scss';
+
+@import 'pages/home.scss';
+@import 'pages/post.scss';

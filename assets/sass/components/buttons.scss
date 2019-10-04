@@ -1,22 +1,45 @@
 .btn {
+    line-height: 1;
     padding: .6rem .75rem;
     font-size: 0.875rem;
     line-height: 1.5;
     border-radius: 0;
 }
-.btn-sti {
+.btn-fc {
     color: #fff;
-    background-color: $COLOR-STI;
-    border-color: $COLOR-STI;
+    background-color: $COLOR-BLACK;
+    border-color: $COLOR-BLACK;
     font-weight: 700;
     text-transform: uppercase;
     &:hover {
-        color: #fff !important;
-        background-color: $COLOR-BB !important;
-        border-color: $COLOR-BB !important;
+        color: #fff;
+        background-color: rgba($COLOR-BLACK,.8);
+        border-color: rgba($COLOR-BLACK,.8);
     }
 }
-.btn-sti.active {
-    background-color: $COLOR-BB;
-    border-color: $COLOR-BB;
+.btn-fc.active {
+    background-color: rgba($COLOR-BLACK,.8);
+    border-color: rgba($COLOR-BLACK,.8);
+}
+.btn-entrys {
+    padding-bottom: 20px;
+    font-size: 0.9375rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    margin-bottom: 28px;
+    color: $COLOR-BLACK;
+    position: relative;
+    font-weight: 600;
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        width: 50px;
+        left: 50%;
+        transform: translatex(-25px);
+        background-color: $COLOR-BLACK;
+    }
 }

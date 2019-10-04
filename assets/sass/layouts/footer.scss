@@ -1,0 +1,33 @@
+.footer {
+    background-color: $COLOR-BLACK;
+    &-top {
+        .footer-sep {
+            border-bottom: 1px solid #333;
+            padding: 28px 0;
+        }
+    }
+    &-bottom {
+        padding: 28px 0;
+        .copyright {
+            color: $COLOR-GREY;
+            font-size: 0.875rem;
+            a {
+                font-weight: 600;
+                color: $COLOR-GREY;
+            }
+        }
+    }
+    &-brand {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 1.5625rem;
+        color: $COLOR-GREY;
+        b {
+            font-weight: 700;
+        }
+        &:focus, &:hover {
+            text-decoration: none;
+            color: $COLOR-GREY;
+        }
+    }
+}

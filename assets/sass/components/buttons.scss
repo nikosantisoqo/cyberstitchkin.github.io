@@ -1,0 +1,22 @@
+.btn {
+    padding: .6rem .75rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0;
+}
+.btn-sti {
+    color: #fff;
+    background-color: $COLOR-STI;
+    border-color: $COLOR-STI;
+    font-weight: 700;
+    text-transform: uppercase;
+    &:hover {
+        color: #fff !important;
+        background-color: $COLOR-BB !important;
+        border-color: $COLOR-BB !important;
+    }
+}
+.btn-sti.active {
+    background-color: $COLOR-BB;
+    border-color: $COLOR-BB;
+}

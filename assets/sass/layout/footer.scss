@@ -1,0 +1,36 @@
+.footer {
+    height: 20vh;
+    position: relative;
+    &-top {
+        background-color: $COLOR-GREY;
+        border-radius: 100%;
+        position: absolute;
+        top: -40%;
+        width: 150%;
+        height: 150%;
+        left: -25%;
+        z-index: 1;
+    }
+    &-content {
+        background-color: $COLOR-GREY;
+        position: relative;
+        z-index: 2;
+        ul {
+            li:first-child {
+                margin-right: 1rem;
+            }
+        }
+    }
+    &-list--link {
+        color: #ffffff;
+        font-size: .9rem;
+    }
+    &-logo {
+        width: 9rem;
+        margin: .8rem;
+    }
+    p {
+        color: #ffffff;
+        font-size: .8rem;
+    }
+}
